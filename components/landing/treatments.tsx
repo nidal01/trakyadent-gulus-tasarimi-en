@@ -11,6 +11,7 @@ import {
   Zap,
   CheckCircle2,
   ChevronDown,
+  SquareStack,
 } from "lucide-react"
 import { WhatsAppIcon } from "./whatsapp-icon"
 
@@ -72,7 +73,7 @@ const treatments = [
     ],
   },
   {
-    icon: Layers,
+    icon: SquareStack,
     label: "Lamine Diş",
     title: "Lamine Diş",
     shortDesc: "Dişin yalnızca ön yüzeyine uygulanan ultra ince lamine kaplamalar ile doğal ve zarif bir gülüş.",
