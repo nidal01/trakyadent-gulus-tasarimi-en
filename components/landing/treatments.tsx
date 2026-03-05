@@ -73,6 +73,20 @@ const treatments = [
   },
   {
     icon: Layers,
+    label: "Lamine Diş",
+    title: "Lamine Diş",
+    shortDesc: "Dişin yalnızca ön yüzeyine uygulanan ultra ince lamine kaplamalar ile doğal ve zarif bir gülüş.",
+    longDesc:
+      "Lamine (laminat veneer) diş uygulaması, dişin ön yüzeyine yapıştırılan çok ince seramik veya kompozit plakalarla gerçekleştirilen minimal invazif bir estetik işlemdir. Renk, şekil, boy ve aralık gibi kozmetik problemlerin kısa sürede düzeltilmesini sağlar.",
+    benefits: [
+      "Diş minesinden minimum kesim yapılır veya hiç yapılmaz",
+      "Renk bozuklukları, kırıklar ve aralıklar tek işlemde düzeltilebilir",
+      "Doğal diş görünümüne en yakın estetik sonuç",
+      "Kısa sürede uygulanan kalıcı ve dayanıklı çözüm",
+    ],
+  },
+  {
+    icon: Layers,
     label: "Porselen Kaplama",
     title: "Porselen Kaplama",
     shortDesc: "İnce porselen laminatlar ile dişleri kaplayan minimal invazif estetik çözüm.",
