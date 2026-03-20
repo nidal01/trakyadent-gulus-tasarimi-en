@@ -9,7 +9,7 @@ const slides = [
   {
     image: "/images/hero-child-smile.jpg",
     title: "Çocuk Diş Sağlığında Uzman Çözüm",
-    titleHighlight: "Trakyadent Pedodonti",
+    titleHighlight: "Trakyadent Kids",
     subtitle:
       "Minik gülüşler için korkusuz, güvenli ve sevgi dolu bir diş tedavi deneyimi",
   },
@@ -117,10 +117,7 @@ export function HeroSlider() {
             <div className="absolute inset-0 flex items-center">
               <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
                 <div className="max-w-xl lg:max-w-2xl">
-                  {/* Google Badge on mobile - above title */}
-                  <div className="mb-4 sm:hidden">
-                    <GoogleBadge />
-                  </div>
+                  
 
                   <div
                     className={`transition-all duration-700 ${index === current
@@ -130,7 +127,7 @@ export function HeroSlider() {
                     style={{ transitionDelay: "200ms" }}
                   >
                     <span className="mb-3 inline-block rounded-full bg-[hsl(var(--accent))]/20 px-3 py-1 text-xs font-semibold text-[hsl(var(--accent))] sm:mb-4 sm:px-4 sm:py-1.5 sm:text-sm">
-                      Trakyadent Pedodonti Merkezi
+                      Trakyadent Kids
                     </span>
                   </div>
 
@@ -167,7 +164,7 @@ export function HeroSlider() {
                     style={{ transitionDelay: "800ms" }}
                   >
                     <a
-                      href="https://wa.me/905417265212"
+                      href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A001"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-6 py-3.5 text-base font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-105 hover:shadow-xl"
@@ -188,10 +185,7 @@ export function HeroSlider() {
           </div>
         ))}
 
-        {/* Google Rating Badge - hidden on mobile, shown on sm+ */}
-        <div className="absolute bottom-20 right-2 z-10 hidden sm:bottom-24 sm:right-8 sm:block lg:bottom-12 lg:right-12">
-          <GoogleBadge />
-        </div>
+       
 
         {/* Slider controls - desktop only */}
         <button
@@ -228,7 +222,7 @@ export function HeroSlider() {
       {/* Mobile CTA buttons - below the image */}
       <div className="flex flex-col gap-2.5 bg-[hsl(210,40%,12%)] px-4 py-4 sm:hidden">
         <a
-          href="https://wa.me/905417265212"
+          href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A001"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-5 py-3.5 text-sm font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-105"

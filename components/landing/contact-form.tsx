@@ -1,19 +1,27 @@
 "use client"
 
 import React, { useState } from "react"
+import { useRouter } from "next/navigation"
 import { Send, CheckCircle } from "lucide-react"
 
 function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
   const [formData, setFormData] = useState({ name: "", phone: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+
+    if (!/^\d{11}$/.test(formData.phone)) {
+      alert("Telefon numarası 11 haneli ve sadece rakamlardan oluşmalıdır.")
+      return
+    }
+
     setIsLoading(true)
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/pedodonti/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -21,10 +29,10 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
 
       if (response.ok) {
         setSubmitted(true)
+        setFormData({ name: "", phone: "", message: "" })
         setTimeout(() => {
-          setSubmitted(false)
-          setFormData({ name: "", phone: "", message: "" })
-        }, 3000)
+          router.push("/tesekkur.html")
+        }, 800)
       } else {
         alert("Mesaj gönderilemedi. Lütfen tekrar deneyin.")
       }
@@ -55,7 +63,7 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
           className={`text-sm ${isDark ? "text-primary-foreground/80" : "text-muted-foreground"
             }`}
         >
-          En kısa sürede sizinle iletişime geçeceğiz.
+          Teşekkürler! Yönlendiriliyorsunuz...
         </p>
       </div>
     )
@@ -76,13 +84,20 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
       />
       <input
         type="tel"
-        placeholder="Telefon Numaranız"
+        placeholder="0532 xxx xx xx"
         required
         value={formData.phone}
-        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+        onChange={(e) => {
+          const digitsOnly = e.target.value.replace(/\D/g, "").slice(0, 11)
+          setFormData({ ...formData, phone: digitsOnly })
+        }}
+        inputMode="numeric"
+        pattern="[0-9]{11}"
+        minLength={11}
+        maxLength={11}
         className={`rounded-xl border-2 px-4 py-3 text-sm focus:outline-none sm:px-5 sm:py-3.5 sm:text-base ${isDark
-          ? "border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50 focus:border-[hsl(var(--accent))]"
-          : "border-border bg-card text-foreground placeholder:text-muted-foreground focus:border-primary"
+          ? "border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-[hsl(var(--accent))]"
+          : "border-border bg-card text-foreground placeholder:text-muted-foreground/70 focus:border-primary"
           }`}
       />
       <textarea
