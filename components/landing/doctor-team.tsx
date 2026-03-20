@@ -5,13 +5,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 import { WhatsAppIcon } from "./whatsapp-icon"
 
 const doctors = [
-  { name: "Dt. Subaykan PANDAR", title: "Kurucu Yönetim Kurulu Üyesi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/subaykan-pandar-1-570x696.jpg" },
-  { name: "Dt. Emre PANDAR", title: "Yönetim Kurulu Başkanı", image: "https://www.trakyadent.com.tr/wp-content/uploads/2021/11/emre-pandar-2-570x696.jpg" },
-  { name: "Dt. Demet PANDAR", title: "Yönetim Kurulu Üyesi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/10/dt-demet-pandar-0001-570x696.jpg" },
-  { name: "Dr. Dt. Fuad NAJAFI", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/fuad-najafi-1-570x696.jpg" },
-  { name: "Dr. Dt. Ezgi AKÇE", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/11/dt-ezgi-akce-maslak-570x696.jpg" },
-  { name: "Dt. Pınar ERSAN", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/pinar-hoca-foto-570x696.jpg" },
-  { name: "Uzm. Dt. Mert GÖKSU", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/mert-goksu-570x696.jpg" },
+  { name: "Dt. Subaykan PANDAR", title: "Founder Board Member", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/subaykan-pandar-1-570x696.jpg" },
+  { name: "Dt. Emre PANDAR", title: "Chairman of the Board", image: "https://www.trakyadent.com.tr/wp-content/uploads/2021/11/emre-pandar-2-570x696.jpg" },
+  { name: "Dt. Demet PANDAR", title: "Board Member", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/10/dt-demet-pandar-0001-570x696.jpg" },
+  { name: "Dr. Dt. Fuad NAJAFI", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/fuad-najafi-1-570x696.jpg" },
+  { name: "Dr. Dt. Ezgi AKCE", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/11/dt-ezgi-akce-maslak-570x696.jpg" },
+  { name: "Dt. Pinar ERSAN", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/pinar-hoca-foto-570x696.jpg" },
+  { name: "Uzm. Dt. Mert GOKSU", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/mert-goksu-570x696.jpg" },
 ]
 
 function DoctorCard({ doctor }: { doctor: { name: string; title: string; image: string } }) {
@@ -35,13 +35,13 @@ function DoctorCard({ doctor }: { doctor: { name: string; title: string; image: 
         </p>
         <div className="mt-auto flex flex-col gap-1.5">
           <a
-            href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+            href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-1.5 rounded-lg bg-[hsl(var(--accent))] px-3 py-2 text-xs font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105"
           >
             <WhatsAppIcon className="h-3.5 w-3.5" />
-            Randevu Al
+            Book Appointment
           </a>
           <a
             href="tel:02129126867"
@@ -86,18 +86,18 @@ export function DoctorTeam() {
   }
 
   return (
-    <section id="ekibimiz" className="bg-muted py-16 lg:py-24">
+    <section id="team" className="bg-muted py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4">
         {/* Header */}
         <div className="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
           <span className="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Uzman Hekimlerimiz
+            Our Expert Doctors
           </span>
           <h2 className="mb-4 font-serif text-3xl font-extrabold text-foreground lg:text-4xl">
-            Uzman Hekim Kadromuz
+            Our Expert Medical Team
           </h2>
           <p className="text-base text-muted-foreground lg:text-lg">
-            Tüm hekimlerimiz ile tanışın.
+            Meet all of our doctors.
           </p>
         </div>
 
@@ -107,7 +107,7 @@ export function DoctorTeam() {
             <button
               onClick={() => scroll("left")}
               className="absolute -left-1 top-1/3 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-card/90 text-foreground shadow-lg backdrop-blur-sm transition-all hover:bg-primary hover:text-primary-foreground sm:h-11 sm:w-11 lg:-left-4"
-              aria-label="Önceki hekimler"
+              aria-label="Previous doctors"
             >
               <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
@@ -116,7 +116,7 @@ export function DoctorTeam() {
             <button
               onClick={() => scroll("right")}
               className="absolute -right-1 top-1/3 z-10 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-border bg-card/90 text-foreground shadow-lg backdrop-blur-sm transition-all hover:bg-primary hover:text-primary-foreground sm:h-11 sm:w-11 lg:-right-4"
-              aria-label="Sonraki hekimler"
+              aria-label="Next doctors"
             >
               <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
@@ -144,19 +144,18 @@ export function DoctorTeam() {
         <div className="mt-16 lg:mt-20">
           <div className="mx-auto mb-10 max-w-2xl text-center lg:mb-12">
             <h2 className="mb-4 font-serif text-2xl font-extrabold text-foreground sm:text-3xl lg:text-4xl">
-              Hekimlerimiz Anlatıyor!
+              Our Doctors Explain!
             </h2>
             <p className="text-base text-muted-foreground lg:text-lg">
-              Uzman hekimlerimizin bilgilendirici videolarıyla gülüş tasarımı ve estetik tedavi süreçleri
-              hakkında detaylı bilgi alın.
+              Get detailed information about smile design and aesthetic treatment processes with informative videos from our expert doctors.
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
             {[
-              { id: "BFhvhAvorqE", title: "İmplant nedir ?" },
-              { id: "BAtkRuCgA-U", title: "Dijital Diş Hekimliği" },
-              { id: "ppkjvwJR2VU", title: "Diş Temizliği ve Diş Beyazlatma" },
+              { id: "BFhvhAvorqE", title: "What is an Implant?" },
+              { id: "BAtkRuCgA-U", title: "Digital Dentistry" },
+              { id: "ppkjvwJR2VU", title: "Teeth Cleaning and Whitening" },
             ].map((video) => (
               <div
                 key={video.id}

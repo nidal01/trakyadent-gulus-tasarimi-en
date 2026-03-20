@@ -24,11 +24,11 @@ export function StickyButtons() {
           }`}
       >
         <a
-          href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+          href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(142,70%,45%)] text-[hsl(0,0%,100%)] shadow-xl transition-transform hover:scale-110"
-          aria-label="WhatsApp ile iletişime geç"
+          aria-label="Contact via WhatsApp"
         >
           <span className="absolute inset-0 rounded-full bg-[hsl(142,70%,45%)] animate-pulse-ring" />
           <WhatsAppIcon className="relative h-7 w-7" />
@@ -36,7 +36,7 @@ export function StickyButtons() {
         <a
           href="tel:02129126867"
           className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110"
-          aria-label="Hemen ara"
+          aria-label="Call now"
         >
           <Phone className="h-6 w-6" />
         </a>
@@ -69,13 +69,13 @@ export function StickyButtons() {
           style={{ backgroundColor: "#384978" }}
         >
           <a
-            href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+            href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-primary-foreground transition-opacity active:opacity-80"
           >
             <WhatsAppIcon className="h-5 w-5" />
-            <span className="text-[11px] font-bold leading-none">{"Whatsapp 7/24"}</span>
+            <span className="text-[11px] font-bold leading-none">{"WhatsApp 24/7"}</span>
           </a>
 
           {/* Center spacer for the bubble */}

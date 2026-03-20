@@ -14,7 +14,7 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
     e.preventDefault()
 
     if (!/^\d{11}$/.test(formData.phone)) {
-      alert("Telefon numarası 11 haneli ve sadece rakamlardan oluşmalıdır.")
+      alert("Phone number must be 11 digits and contain only numbers.")
       return
     }
 
@@ -34,11 +34,11 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
           router.push("/tesekkur.html")
         }, 800)
       } else {
-        alert("Mesaj gönderilemedi. Lütfen tekrar deneyin.")
+        alert("Message could not be sent. Please try again.")
       }
     } catch (error) {
       console.error("[v0] Form submission error:", error)
-      alert("Bir hata oluştu. Lütfen tekrar deneyin.")
+      alert("An error occurred. Please try again.")
     } finally {
       setIsLoading(false)
     }
@@ -57,13 +57,13 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
           className={`mb-2 text-xl font-bold ${isDark ? "text-primary-foreground" : "text-foreground"
             }`}
         >
-          Talebiniz Alındı!
+          Request Received!
         </h3>
         <p
           className={`text-sm ${isDark ? "text-primary-foreground/80" : "text-muted-foreground"
             }`}
         >
-          Teşekkürler! Yönlendiriliyorsunuz...
+          Thank you! You are being redirected...
         </p>
       </div>
     )
@@ -73,7 +73,7 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       <input
         type="text"
-        placeholder="Adınız Soyadınız"
+        placeholder="Your Full Name"
         required
         value={formData.name}
         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -101,7 +101,7 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
           }`}
       />
       <textarea
-        placeholder="Mesajınız (Opsiyonel)"
+        placeholder="Your Message (Optional)"
         rows={2}
         value={formData.message}
         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -116,7 +116,7 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
         className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-6 py-3.5 text-sm font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-[1.02] hover:shadow-xl disabled:cursor-not-allowed disabled:opacity-50 sm:text-base"
       >
         <Send className="h-5 w-5" />
-        {isLoading ? "Gönderiliyor..." : "Hemen Bilgi Al!"}
+        {isLoading ? "Sending..." : "Get Info Now!"}
       </button>
     </form>
   )
@@ -126,7 +126,7 @@ export { MiniForm }
 
 export function ContactForm() {
   return (
-    <section id="iletisim" className="bg-primary py-14 lg:py-24">
+    <section id="contact" className="bg-primary py-14 lg:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Video / visual side */}
@@ -134,7 +134,7 @@ export function ContactForm() {
             <div className="aspect-video w-full overflow-hidden rounded-2xl bg-foreground/10">
               <iframe
                 src="https://www.youtube.com/embed/4x9KV17wKlE"
-                title="Gülüşünüzü Özgürleştirin !"
+                title="Free Your Smile!"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="h-full w-full"
@@ -146,10 +146,10 @@ export function ContactForm() {
           {/* Form */}
           <div>
             <h2 className="mb-2 font-serif text-2xl font-extrabold text-primary-foreground sm:text-3xl lg:text-4xl">
-              Gülüşünüzü Yeniden Tasarlayın.
+              Redesign Your Smile.
             </h2>
             <p className="mb-6 text-base text-primary-foreground/80 sm:mb-8 sm:text-lg">
-              Uzman ekibimizden gülüş tasarımı hakkında detaylı bilgi alın.
+              Get detailed information about smile design from our expert team.
             </p>
             <MiniForm variant="dark" />
           </div>

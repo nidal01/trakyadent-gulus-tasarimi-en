@@ -8,17 +8,17 @@ import { WhatsAppIcon } from "./whatsapp-icon"
 const slides = [
   {
     image: "/images/perfect-healthy-white-teeth-smile-young-woman-dental-health-healthy-skin-concept-dental-clinic-generative-ai.webp",
-    title: "Gülüşünüzü Yeniden Tasarlayın.",
+    title: "Redesign Your Smile.",
     titleHighlight: "Maslak Trakyadent",
     subtitle:
-      "Uzman ekibimizden gülüş tasarımı hakkında detaylı bilgi alın.",
+      "Get detailed information about smile design from our expert team.",
   },
   {
     image: "/images/beautiful-woman-smiling-showing-her-perfect-teeth (1).webp",
-    title: "Dijital Planlama ile",
-    titleHighlight: "Kusursuz Gülüş Tasarımı",
+    title: "Perfect Smile Design",
+    titleHighlight: "With Digital Planning",
     subtitle:
-      "Yüz hatlarınıza ve beklentilerinize özel, modern teknoloji ile tasarlanmış doğal ve özgüvenli bir gülüş.",
+      "A natural and confident smile designed with modern technology, customized to your facial features and expectations.",
   },
 ]
 
@@ -33,7 +33,7 @@ function GoogleBadge() {
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
       </svg>
       <div>
-        <p className="text-[8px] font-semibold text-[hsl(0,0%,100%)]/80 sm:text-xs">Google Değerlendirme</p>
+        <p className="text-[8px] font-semibold text-[hsl(0,0%,100%)]/80 sm:text-xs">Google Rating</p>
         <div className="flex items-center gap-0.5 sm:gap-1">
           <span className="text-xs font-extrabold text-[hsl(0,0%,100%)] sm:text-xl">4.8</span>
           <div className="flex">
@@ -42,7 +42,7 @@ function GoogleBadge() {
             ))}
           </div>
         </div>
-        <p className="text-[7px] text-[hsl(0,0%,100%)]/60 sm:text-[11px]">4.400+ Değerlendirme</p>
+        <p className="text-[7px] text-[hsl(0,0%,100%)]/60 sm:text-[11px]">4,400+ Reviews</p>
       </div>
     </div>
   )
@@ -127,7 +127,7 @@ export function HeroSlider() {
                     style={{ transitionDelay: "200ms" }}
                   >
                     <span className="mb-3 inline-block rounded-full bg-[hsl(var(--accent))]/20 px-3 py-1 text-xs font-semibold text-[hsl(var(--accent))] sm:mb-4 sm:px-4 sm:py-1.5 sm:text-sm">
-                      Gülüş Tasarımı
+                      Smile Design
                     </span>
                   </div>
 
@@ -164,19 +164,19 @@ export function HeroSlider() {
                     style={{ transitionDelay: "800ms" }}
                   >
                     <a
-                      href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+                      href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-6 py-3.5 text-base font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-105 hover:shadow-xl"
                     >
                       <WhatsAppIcon className="h-5 w-5" />
-                      WhatsApp ile Randevu
+                      Book via WhatsApp
                     </a>
                     <a
                       href="tel:02129126867"
                       className="flex items-center justify-center gap-2 rounded-xl border-2 border-[hsl(0,0%,100%)]/30 bg-[hsl(0,0%,100%)]/10 px-6 py-3.5 text-base font-bold text-[hsl(0,0%,100%)] backdrop-blur-sm transition-all hover:border-[hsl(0,0%,100%)]/50 hover:bg-[hsl(0,0%,100%)]/20"
                     >
-                      0212 912 68 67 Hemen Arayın
+                      0212 912 68 67 Call Now
                     </a>
                   </div>
                 </div>
@@ -191,14 +191,14 @@ export function HeroSlider() {
         <button
           onClick={prev}
           className="absolute bottom-1/2 left-4 z-10 hidden h-12 w-12 translate-y-1/2 items-center justify-center rounded-full bg-[hsl(0,0%,100%)]/20 text-[hsl(0,0%,100%)] backdrop-blur-sm transition-all hover:bg-[hsl(0,0%,100%)]/40 lg:flex"
-          aria-label="Önceki slayt"
+          aria-label="Previous slide"
         >
           <ChevronLeft className="h-6 w-6" />
         </button>
         <button
           onClick={next}
           className="absolute bottom-1/2 right-4 z-10 hidden h-12 w-12 translate-y-1/2 items-center justify-center rounded-full bg-[hsl(0,0%,100%)]/20 text-[hsl(0,0%,100%)] backdrop-blur-sm transition-all hover:bg-[hsl(0,0%,100%)]/40 lg:flex"
-          aria-label="Sonraki slayt"
+          aria-label="Next slide"
         >
           <ChevronRight className="h-6 w-6" />
         </button>
@@ -213,7 +213,7 @@ export function HeroSlider() {
                 ? "w-8 bg-[hsl(var(--accent))]"
                 : "w-3 bg-[hsl(0,0%,100%)]/40"
                 }`}
-              aria-label={`Slayt ${i + 1}`}
+              aria-label={`Slide ${i + 1}`}
             />
           ))}
         </div>
@@ -222,19 +222,19 @@ export function HeroSlider() {
       {/* Mobile CTA buttons - below the image */}
       <div className="flex flex-col gap-2.5 bg-[hsl(210,40%,12%)] px-4 py-4 sm:hidden">
         <a
-          href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+          href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-5 py-3.5 text-sm font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-105"
         >
           <WhatsAppIcon className="h-5 w-5" />
-          WhatsApp ile Randevu
+          Book via WhatsApp
         </a>
         <a
           href="tel:02129126867"
           className="flex items-center justify-center gap-2 rounded-xl border-2 border-[hsl(0,0%,100%)]/30 bg-[hsl(0,0%,100%)]/10 px-5 py-3.5 text-sm font-bold text-[hsl(0,0%,100%)] transition-all hover:bg-[hsl(0,0%,100%)]/20"
         >
-          0212 912 68 67 Hemen Arayın
+          0212 912 68 67 Call Now
         </a>
       </div>
     </section>

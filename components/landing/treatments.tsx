@@ -18,114 +18,114 @@ import { WhatsAppIcon } from "./whatsapp-icon"
 const treatments = [
   {
     icon: Sparkles,
-    label: "Dijital Gülüş Tasarımı",
-    title: "Dijital Gülüş Tasarımı",
-    shortDesc: "Yüz hatlarınıza özel, dijital ortamda planlanan kişiselleştirilmiş gülüş tasarımı.",
+    label: "Digital Smile Design",
+    title: "Digital Smile Design",
+    shortDesc: "Personalized smile design planned digitally, customized to your facial features.",
     longDesc:
-      "Dijital gülüş tasarımı, tedaviye başlamadan önce sonucu görmenizi sağlayan modern bir planlama yöntemidir. Yüz simetrisi, diş oranları ve dudak yapısı gözetilerek hazırlanan simülasyonla beklentilerinize tam uygun bir plan oluşturulur.",
+      "Digital smile design is a modern planning method that allows you to see the results before starting treatment. A simulation is prepared considering facial symmetry, tooth proportions and lip structure, creating a plan that perfectly matches your expectations.",
     benefits: [
-      "Tedavi öncesi dijital simülasyon ile sonucu görün",
-      "Yüz hatlarınıza ve oranlarınıza özel planlama",
-      "Estetik ve fonksiyoneli bir arada sunar",
-      "Daha öngörülebilir ve güvenilir tedavi süreci",
+      "See results with digital simulation before treatment",
+      "Planning customized to your facial features and proportions",
+      "Combines aesthetics and functionality",
+      "More predictable and reliable treatment process",
     ],
   },
   {
     icon: Star,
     label: "Hollywood Smile",
     title: "Hollywood Smile",
-    shortDesc: "Beyaz, parlak ve dikkat çekici dişler için Hollywood Smile gülüş dönüşümü.",
+    shortDesc: "Hollywood Smile transformation for white, bright and eye-catching teeth.",
     longDesc:
-      "Hollywood Smile, dişlerin şekil, renk ve boyutunu ideal oranlarla yeniden tasarlayan kapsamlı bir estetik uygulamadır. Mükemmel beyazlık ve simetri arayan hastalar için tercih edilen prestijli bir dönüşüm paketidir.",
+      "Hollywood Smile is a comprehensive aesthetic application that redesigns the shape, color and size of teeth with ideal proportions. It is a prestigious transformation package preferred by patients seeking perfect whiteness and symmetry.",
     benefits: [
-      "Belirgin beyazlık ve kusursuz simetri",
-      "Kaplamalar ile diş şekli ve boyu optimize edilir",
-      "Tek seansta dramatik dönüşüm imkânı",
-      "Uzun yıllar estetik ve fonksiyonel kullanım",
+      "Distinctive whiteness and flawless symmetry",
+      "Tooth shape and size optimized with veneers",
+      "Dramatic transformation possible in one session",
+      "Years of aesthetic and functional use",
     ],
   },
   {
     icon: Crown,
-    label: "Emax Kaplama",
-    title: "Emax Kaplama",
-    shortDesc: "Işık geçirgenliği sayesinde doğal diş görünümü sunan preslenmiş seramik kaplamalar.",
+    label: "Emax Veneers",
+    title: "Emax Veneers",
+    shortDesc: "Pressed ceramic veneers offering natural tooth appearance with light transmittance.",
     longDesc:
-      "Emax (lityum disilikat) kaplamalar, ön dişlerde en doğal ve estetik görünümü sağlayan seramik sistemdir. Gerçek diş minesiyle neredeyse özdeş ışık geçirgenliği ile doğallığı ve estetiği bir arada sunar.",
+      "Emax (lithium disilicate) veneers are the ceramic system that provides the most natural and aesthetic appearance for front teeth. They offer naturalness and aesthetics together with light transmittance almost identical to real tooth enamel.",
     benefits: [
-      "Doğal diş minesiyle benzer ışık geçirgenliği",
-      "İnce yapısı sayesinde minimal diş kesimi",
-      "Uzun ömürlü ve renk değiştirmeye dayanıklı",
-      "Ön dişlerde en estetik sonucu verir",
+      "Light transmittance similar to natural tooth enamel",
+      "Minimal tooth reduction due to thin structure",
+      "Long-lasting and resistant to discoloration",
+      "Provides the most aesthetic results for front teeth",
     ],
   },
   {
     icon: Gem,
-    label: "Zirkonyum Kaplama",
-    title: "Zirkonyum Kaplama",
-    shortDesc: "Yüksek dayanıklılık ve estetik bir arada; zirkonyum kaplama ile güçlü gülüşler.",
+    label: "Zirconium Crowns",
+    title: "Zirconium Crowns",
+    shortDesc: "High durability and aesthetics combined; strong smiles with zirconium crowns.",
     longDesc:
-      "Zirkonyum kaplamalar, hem ön hem arka dişlerde güvenle kullanılabilen, biyouyumlu ve son derece dayanıklı bir seramik sistemdir. Metal altyapı içermediğinden diş etinde siyah çizgi oluşumunu önler.",
+      "Zirconium crowns are a biocompatible and extremely durable ceramic system that can be safely used on both front and back teeth. Since it does not contain metal infrastructure, it prevents the formation of dark lines on the gums.",
     benefits: [
-      "Metal içermeyen biyouyumlu yapı",
-      "Arka dişlerde de güvenle uygulanabilir",
-      "Diş eti sağlığını korur",
-      "Uzun ömürlü ve yüksek kırılma direnci",
+      "Metal-free biocompatible structure",
+      "Can be safely applied to back teeth",
+      "Protects gum health",
+      "Long-lasting with high fracture resistance",
     ],
   },
   {
     icon: SquareStack,
-    label: "Lamine Diş",
-    title: "Lamine Diş",
-    shortDesc: "Dişin yalnızca ön yüzeyine uygulanan ultra ince lamine kaplamalar ile doğal ve zarif bir gülüş.",
+    label: "Laminate Veneers",
+    title: "Laminate Veneers",
+    shortDesc: "A natural and elegant smile with ultra-thin laminate veneers applied only to the front surface of teeth.",
     longDesc:
-      "Lamine (laminat veneer) diş uygulaması, dişin ön yüzeyine yapıştırılan çok ince seramik veya kompozit plakalarla gerçekleştirilen minimal invazif bir estetik işlemdir. Renk, şekil, boy ve aralık gibi kozmetik problemlerin kısa sürede düzeltilmesini sağlar.",
+      "Laminate (laminate veneer) dental application is a minimally invasive aesthetic procedure performed with very thin ceramic or composite plates bonded to the front surface of the tooth. It allows cosmetic problems such as color, shape, height and spacing to be corrected in a short time.",
     benefits: [
-      "Diş minesinden minimum kesim yapılır veya hiç yapılmaz",
-      "Renk bozuklukları, kırıklar ve aralıklar tek işlemde düzeltilebilir",
-      "Doğal diş görünümüne en yakın estetik sonuç",
-      "Kısa sürede uygulanan kalıcı ve dayanıklı çözüm",
+      "Minimal or no cutting from tooth enamel",
+      "Color defects, chips and gaps can be corrected in one procedure",
+      "Aesthetic result closest to natural tooth appearance",
+      "Permanent and durable solution applied in a short time",
     ],
   },
   {
     icon: Layers,
-    label: "Porselen Kaplama",
-    title: "Porselen Kaplama",
-    shortDesc: "İnce porselen laminatlar ile dişleri kaplayan minimal invazif estetik çözüm.",
+    label: "Porcelain Veneers",
+    title: "Porcelain Veneers",
+    shortDesc: "Minimally invasive aesthetic solution covering teeth with thin porcelain laminates.",
     longDesc:
-      "Porselen laminat kaplamalar, dişin yalnızca ön yüzeyine ince bir porselen tabakası yapıştırılmasıyla gerçekleştirilen minimal invazif bir estetik uygulamadır. Renk, şekil ve boydaki kusurlar minimal diş kesimi ile giderilir.",
+      "Porcelain laminate veneers are a minimally invasive aesthetic application performed by bonding a thin porcelain layer to only the front surface of the tooth. Defects in color, shape and size are corrected with minimal tooth reduction.",
     benefits: [
-      "Minimal diş kesimi ile estetik dönüşüm",
-      "Renk, şekil ve boydaki kusurlar düzeltilir",
-      "Diş rengine uygun doğal görünüm",
-      "Dayanıklı ve uzun ömürlü estetik çözüm",
+      "Aesthetic transformation with minimal tooth reduction",
+      "Defects in color, shape and size are corrected",
+      "Natural appearance matching tooth color",
+      "Durable and long-lasting aesthetic solution",
     ],
   },
   {
     icon: Anchor,
-    label: "İmplant",
-    title: "İmplant",
-    shortDesc: "Eksik dişler için en kalıcı ve doğal görünümlü çözüm: titanyum implant.",
+    label: "Implants",
+    title: "Implants",
+    shortDesc: "The most permanent and natural-looking solution for missing teeth: titanium implants.",
     longDesc:
-      "Dental implant, eksik dişlerin yerine titanyum vidalar ile çeneye sabitlenen kalıcı bir tedavi yöntemidir. Doğal diş kökü gibi işlev gören implantlar, gülüş tasarımının vazgeçilmez bir parçasıdır.",
+      "Dental implant is a permanent treatment method fixed to the jaw with titanium screws to replace missing teeth. Implants that function like natural tooth roots are an indispensable part of smile design.",
     benefits: [
-      "Doğal diş kökü gibi işlev görür",
-      "Komşu dişlere zarar vermez",
-      "Kemik kaybını önler, çene yapısını korur",
-      "Doğru bakım ile ömür boyu kullanılabilir",
+      "Functions like a natural tooth root",
+      "Does not damage adjacent teeth",
+      "Prevents bone loss, protects jaw structure",
+      "Can be used for a lifetime with proper care",
     ],
   },
   {
     icon: Zap,
-    label: "Diş Beyazlatma",
-    title: "Diş Beyazlatma",
-    shortDesc: "Profesyonel klinik beyazlatma ile daha parlak ve aydınlık bir gülüş.",
+    label: "Teeth Whitening",
+    title: "Teeth Whitening",
+    shortDesc: "A brighter and more radiant smile with professional clinic whitening.",
     longDesc:
-      "Profesyonel diş beyazlatma, diş minesindeki renk pigmentlerini parçalayan özel ajanlarla uygulanan klinik bir işlemdir. Kliniğimizde uygulanan kontrollü yöntemler ile güvenli ve etkili sonuçlar elde edilir.",
+      "Professional teeth whitening is a clinical procedure performed with special agents that break down color pigments in tooth enamel. Safe and effective results are achieved with controlled methods applied at our clinic.",
     benefits: [
-      "Klinikte uygulanan güvenli beyazlatma yöntemi",
-      "Kısa sürede belirgin ton açılımı sağlar",
-      "Diş minesine zarar vermez",
-      "Geçici hassasiyet normaldir, uzun süreli etki sağlar",
+      "Safe whitening method applied at the clinic",
+      "Provides significant shade improvement in a short time",
+      "Does not damage tooth enamel",
+      "Temporary sensitivity is normal, provides long-term effect",
     ],
   },
 ]
@@ -140,7 +140,7 @@ function TreatmentContent({ treatment }: { treatment: typeof treatments[0] }) {
       </div>
       <div className="mb-5 rounded-xl bg-muted/50 p-3 sm:mb-8 sm:p-6">
         <h4 className="mb-2 font-serif text-sm font-bold text-foreground sm:mb-4 sm:text-lg">
-          Tedavinin Avantajları
+          Treatment Benefits
         </h4>
         <ul className="flex flex-col gap-2 sm:gap-3">
           {treatment.benefits.map((benefit, i) => (
@@ -153,19 +153,19 @@ function TreatmentContent({ treatment }: { treatment: typeof treatments[0] }) {
       </div>
       <div className="flex flex-col gap-2 sm:flex-row sm:gap-3">
         <a
-          href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+          href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-4 py-2.5 text-xs font-bold text-[hsl(var(--accent-foreground))] shadow-md transition-all hover:scale-[1.02] hover:shadow-lg sm:px-6 sm:py-3.5 sm:text-sm"
         >
           <WhatsAppIcon className="h-4 w-4 sm:h-5 sm:w-5" />
-          Bu Tedavi Hakkında Bilgi Al
+          Get Info About This Treatment
         </a>
         <a
           href="tel:02129126867"
           className="flex items-center justify-center gap-2 rounded-xl border-2 border-primary px-4 py-2.5 text-xs font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:px-6 sm:py-3.5 sm:text-sm"
         >
-          0212 912 68 67 Hemen Ara
+          0212 912 68 67 Call Now
         </a>
       </div>
     </div>
@@ -192,21 +192,20 @@ export function Treatments() {
   const activeTreatment = treatments[activeTab]
 
   return (
-    <section id="tedaviler" className="bg-background py-16 lg:py-24" ref={ref}>
+    <section id="treatments" className="bg-background py-16 lg:py-24" ref={ref}>
       <div className="mx-auto max-w-7xl px-4">
         <div
           className={`mx-auto mb-10 max-w-2xl text-center transition-all duration-700 lg:mb-16 ${visible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
         >
           <span className="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Tedavilerimiz
+            Our Treatments
           </span>
           <h2 className="mb-4 font-serif text-3xl font-extrabold text-foreground lg:text-4xl">
-            Kişiye Özel Gülüş Tasarımı Tedavileri
+            Personalized Smile Design Treatments
           </h2>
           <p className="text-base leading-relaxed text-muted-foreground lg:text-lg">
-            Uzman hekim kadromuz, yüz hatlarınıza ve beklentilerinize uygun kişiye özel gülüş
-            tasarımı planlar.
+            Our expert medical team plans personalized smile design treatments tailored to your facial features and expectations.
           </p>
         </div>
 
@@ -293,7 +292,7 @@ export function Treatments() {
                       {activeTreatment.title}
                     </h3>
                     <p className="mt-1 text-sm font-medium text-primary">
-                      Trakyadent Gülüş Tasarımı
+                      Trakyadent Smile Design
                     </p>
                   </div>
                 </div>

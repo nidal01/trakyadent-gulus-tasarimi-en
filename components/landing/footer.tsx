@@ -23,7 +23,7 @@ export function Footer() {
               />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-[hsl(var(--topbar-foreground))]/70">
-              36 yılı aşkın deneyimle çocuk diş sağlığında güvenilir çözüm ortağınız.
+              Your trusted partner in dental health with over 36 years of experience.
             </p>
             <div className="flex gap-3">
               {[
@@ -46,14 +46,14 @@ export function Footer() {
 
           {/* Quick links */}
           <div>
-            <h4 className="mb-4 font-serif text-base font-bold">Hızlı Erişim</h4>
+            <h4 className="mb-4 font-serif text-base font-bold">Quick Links</h4>
             <ul className="flex flex-col gap-2">
               {[
-                { label: "Tedavilerimiz", href: "#tedaviler" },
-                { label: "Kliniğimiz", href: "#klinikler" },
-                { label: "Neden Trakyadent", href: "#neden-trakyadent" },
-                { label: "Ekibimiz", href: "#ekibimiz" },
-                { label: "SSS", href: "#sss" },
+                { label: "Treatments", href: "#treatments" },
+                { label: "Our Clinic", href: "#clinics" },
+                { label: "Why Trakyadent", href: "#why-trakyadent" },
+                { label: "Our Team", href: "#team" },
+                { label: "FAQ", href: "#faq" },
               ].map((link) => (
                 <li key={link.href}>
                   <a
@@ -69,7 +69,7 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-4 font-serif text-base font-bold">İletişim</h4>
+            <h4 className="mb-4 font-serif text-base font-bold">Contact</h4>
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <Phone className="h-4 w-4 text-primary" />
@@ -80,7 +80,7 @@ export function Footer() {
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <WhatsAppIcon className="h-4 w-4 text-[hsl(var(--accent))]" />
                 <a
-                  href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+                  href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20book%20an%20appointment%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-[hsl(var(--topbar-foreground))]"
@@ -90,36 +90,36 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                <span>Maslak Mah. Büyükdere Cad. Nurol Plaza, No: 255, İç Kapı Z01 Sarıyer/İstanbul</span>
+                <span>Maslak Mah. Buyukdere Cad. Nurol Plaza, No: 255, Inner Door Z01 Sariyer/Istanbul</span>
               </li>
             </ul>
           </div>
 
           {/* Working hours */}
           <div>
-            <h4 className="mb-4 font-serif text-base font-bold">Çalışma Saatleri</h4>
+            <h4 className="mb-4 font-serif text-base font-bold">Working Hours</h4>
             <ul className="flex flex-col gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
               <li className="flex justify-between">
-                <span>Pazartesi - Cuma</span>
+                <span>Monday - Friday</span>
                 <span>09:30 - 19:00</span>
               </li>
               <li className="flex justify-between">
-                <span>Cumartesi</span>
+                <span>Saturday</span>
                 <span>09:30 - 18:00</span>
               </li>
               <li className="flex justify-between">
-                <span>Pazar</span>
-                <span>Kapalı</span>
+                <span>Sunday</span>
+                <span>Closed</span>
               </li>
             </ul>
             <a
-              href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+              href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20book%20an%20appointment%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-4 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105"
             >
               <WhatsAppIcon className="h-4 w-4" />
-              Hemen Randevu Al
+              Book Appointment Now
             </a>
           </div>
         </div>
@@ -129,16 +129,15 @@ export function Footer() {
       <div className="border-t border-[hsl(var(--topbar-foreground))]/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 px-4 py-4 text-center text-xs text-[hsl(var(--topbar-foreground))]/50 md:flex-row md:justify-between">
           <p>
-            &copy; 2026 Trakyadent Ağız ve Diş Sağlığı. Tüm hakları saklıdır.
+            &copy; 2026 Trakyadent Oral and Dental Health. All rights reserved.
           </p>
 
           <p className="max-w-lg font-medium text-[hsl(var(--topbar-foreground))]/60">
-            Sayfa içeriği sadece bilgilendirme amaçlıdır. Tanı ve tedavi için
-            mutlaka doktorunuza başvurunuz.
+            Page content is for informational purposes only. Please consult your doctor for diagnosis and treatment.
           </p>
 
           <p>
-            Yazılım ve Tasarım:{" "}
+            Software and Design:{" "}
             <a
               href="https://www.needsolutions.com.tr/"
               target="_blank"
