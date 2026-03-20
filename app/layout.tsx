@@ -15,9 +15,9 @@ const nunitoSans = Nunito_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Trakyadent Maslak | Gülüş Tasarımı Merkezi',
+  title: 'Trakyadent Maslak | Smile Design Center',
   description:
-    'Trakyadent Maslak - Gülüş tasarımı, Hollywood Smile, zirkonyum kaplama ve implant tedavilerinde uzman klinik. 36 yıllık deneyim, dijital planlama ve kişiye özel estetik çözümler. Hemen randevu alın!',
+    'Trakyadent Maslak - Expert clinic in smile design, Hollywood Smile, zirconium crowns and implant treatments. 36 years of experience, digital planning and personalized aesthetic solutions. Book your appointment now!',
   icons: {
     icon: '/images/favicon.png',
     shortcut: '/images/favicon.png',
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="tr" className={`${nunito.variable} ${nunitoSans.variable}`}>
+    <html lang="en" className={`${nunito.variable} ${nunitoSans.variable}`}>
       <head>
         <Script id="gtm-script" strategy="beforeInteractive">
           {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

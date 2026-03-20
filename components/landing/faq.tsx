@@ -7,44 +7,44 @@ import { WhatsAppIcon } from "./whatsapp-icon"
 
 const faqs = [
   {
-    q: "Gülüş tasarımı ne kadar sürer?",
-    a: "Gülüş tasarımı süresi yapılacak işlemlere göre değişir. Sadece kaplama uygulanacaksa genellikle 5–7 gün içerisinde tamamlanabilir. İmplant gibi ek cerrahi işlemler varsa süreç uzayabilir.",
+    q: "How long does smile design take?",
+    a: "The duration of smile design varies depending on the procedures to be performed. If only veneers are to be applied, it can usually be completed within 5-7 days. If additional surgical procedures such as implants are required, the process may take longer.",
   },
   {
-    q: "Gülüş tasarımı kalıcı mıdır?",
-    a: "Uygulanan materyale göre değişmekle birlikte, düzenli bakım ve kontrollerle uzun yıllar estetik ve fonksiyonel olarak kullanılabilir.",
+    q: "Is smile design permanent?",
+    a: "Although it varies depending on the material applied, it can be used aesthetically and functionally for many years with regular care and check-ups.",
   },
   {
-    q: "Zirkonyum mu Emax mı daha iyi?",
-    a: "Emax kaplamalar ön diş estetiğinde daha doğal ve ışık geçirgendir. Zirkonyum ise dayanıklılık gerektiren bölgelerde avantaj sağlar. Hangi materyalin uygun olduğu kişiye göre belirlenir.",
+    q: "Is zirconium or Emax better?",
+    a: "Emax veneers are more natural and light-transmitting for front tooth aesthetics. Zirconium provides advantages in areas that require durability. Which material is suitable is determined on a case-by-case basis.",
   },
   {
-    q: "Porselen kaplama dişlere zarar verir mi?",
-    a: "Uygulama kontrollü ve ölçülü şekilde yapılır. Amaç dişi koruyarak estetik iyileştirme sağlamaktır. Uzman planlama ile güvenli bir işlemdir.",
+    q: "Does porcelain veneer damage teeth?",
+    a: "The application is done in a controlled and measured way. The aim is to improve aesthetics while protecting the tooth. It is a safe procedure with expert planning.",
   },
   {
-    q: "İmplant tedavisi ağrılı mıdır?",
-    a: "İmplant işlemi lokal anestezi altında yapılır ve işlem sırasında ağrı hissedilmez. Sonrasında hafif hassasiyet olabilir ancak genellikle kontrol altındadır.",
+    q: "Is implant treatment painful?",
+    a: "Implant procedure is performed under local anesthesia and no pain is felt during the procedure. There may be mild sensitivity afterwards but it is usually under control.",
   },
   {
-    q: "İmplant ömrü ne kadardır?",
-    a: "Doğru planlama ve düzenli bakım ile implantlar uzun yıllar sorunsuz kullanılabilir.",
+    q: "How long does an implant last?",
+    a: "With proper planning and regular care, implants can be used for many years without problems.",
   },
   {
-    q: "Diş beyazlatma dişe zarar verir mi?",
-    a: "Profesyonel klinik ortamda uygulanan beyazlatma işlemleri diş minesine zarar vermez. Geçici hassasiyet görülebilir.",
+    q: "Does teeth whitening damage teeth?",
+    a: "Whitening procedures applied in a professional clinical environment do not damage tooth enamel. Temporary sensitivity may occur.",
   },
   {
-    q: "Hollywood Smile ile gülüş tasarımı aynı mı?",
-    a: "Hollywood Smile daha beyaz ve dikkat çekici estetik dönüşümü ifade eder. Gülüş tasarımı ise yüz oranlarına göre planlanan daha kişisel bir estetik çalışmadır.",
+    q: "Are Hollywood Smile and smile design the same?",
+    a: "Hollywood Smile refers to a whiter and more eye-catching aesthetic transformation. Smile design is a more personalized aesthetic work planned according to facial proportions.",
   },
   {
-    q: "Kaplama yapılan diş çürür mü?",
-    a: "Kaplama altındaki diş, iyi ağız bakımı yapılmazsa risk altında olabilir. Düzenli kontroller ve hijyen çok önemlidir.",
+    q: "Can teeth with veneers decay?",
+    a: "The tooth under the veneer may be at risk if good oral care is not maintained. Regular check-ups and hygiene are very important.",
   },
   {
-    q: "Gülüş tasarımı herkese yapılabilir mi?",
-    a: "Genel ağız sağlığı uygun olan çoğu kişiye uygulanabilir. Öncelikle varsa diş eti problemleri veya eksik dişler tedavi edilir, ardından estetik planlama yapılır.",
+    q: "Can everyone have smile design?",
+    a: "It can be applied to most people whose general oral health is suitable. First, any gum problems or missing teeth are treated, then aesthetic planning is done.",
   },
 ]
 
@@ -52,18 +52,17 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
 
   return (
-    <section id="sss" className="bg-background py-16 lg:py-24">
+    <section id="faq" className="bg-background py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mb-12 text-center lg:mb-16">
           <span className="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Sık Sorulan Sorular
+            Frequently Asked Questions
           </span>
           <h2 className="mb-4 font-serif text-3xl font-extrabold text-foreground lg:text-4xl">
-            Gülüş Tasarımı ve Estetik Tedaviler Hakkında Merak Edilenler
+            Common Questions About Smile Design and Aesthetic Treatments
           </h2>
           <p className="text-lg text-muted-foreground">
-            Estetik diş hekimliği uygulamaları, implant ve kaplama tedavileri hakkında en sık sorulan
-            soruları sizin için yanıtladık.
+            We have answered the most frequently asked questions about aesthetic dentistry, implants and veneer treatments for you.
           </p>
         </div>
 
@@ -108,7 +107,7 @@ export function FAQ() {
               <div className="relative mb-6 aspect-[3/4] overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src="/images/closeup-image-young-woman-with-flowers-vector.jpg"
-                  alt="Gülüş tasarımı uzmanı"
+                  alt="Smile design expert"
                   fill
                   sizes="380px"
                   className="object-cover"
@@ -118,19 +117,19 @@ export function FAQ() {
               {/* CTA card */}
               <div className="rounded-2xl bg-primary p-6 text-center">
                 <h3 className="mb-2 font-serif text-lg font-extrabold text-primary-foreground">
-                  Başka Sorularınız Mı Var?
+                  Do You Have Other Questions?
                 </h3>
                 <p className="mb-4 text-sm text-primary-foreground/80">
-                  Gülüş tasarımı ekibimizle hemen iletişime geçin.
+                  Contact our smile design team right away.
                 </p>
                 <a
-                  href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+                  href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-6 py-3 text-sm font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-transform hover:scale-105"
                 >
                   <WhatsAppIcon className="h-4 w-4" />
-                  WhatsApp ile Sorun
+                  Ask via WhatsApp
                 </a>
               </div>
             </div>
@@ -140,19 +139,19 @@ export function FAQ() {
         {/* Mobile CTA after FAQ */}
         <div className="mt-10 rounded-2xl bg-primary p-8 text-center lg:hidden">
           <h3 className="mb-3 font-serif text-2xl font-extrabold text-primary-foreground">
-            Aklınıza Takılan Başka Sorular Mı Var?
+            Do You Have Other Questions?
           </h3>
           <p className="mb-6 text-primary-foreground/80">
-            Gülüş tasarımı ekibimizle hemen iletişime geçin.
+            Contact our smile design team right away.
           </p>
           <a
-            href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+            href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-8 py-4 text-base font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-transform hover:scale-105"
           >
             <WhatsAppIcon className="h-5 w-5" />
-            WhatsApp ile Sorun
+            Ask via WhatsApp
           </a>
         </div>
       </div>

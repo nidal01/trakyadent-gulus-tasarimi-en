@@ -13,20 +13,20 @@ export function CTABanner() {
 
       <div className="relative mx-auto max-w-4xl px-4 text-center">
         <h2 className="mb-4 font-serif text-3xl font-extrabold text-primary-foreground lg:text-5xl">
-          Hayalinizdeki Gülüş İçin İlk Adımı Atın
+          Take the First Step for Your Dream Smile
         </h2>
         <p className="mb-8 text-lg text-primary-foreground/80 lg:text-xl">
-          36 yıllık deneyimimiz ve estetik uzmanlığımızla, Maslak kliniğimizde size özel gülüş planlamanızı birlikte oluşturalım.
+          With 36 years of experience and aesthetic expertise, let us create your personalized smile plan at our Maslak clinic.
         </p>
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+            href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-8 py-4 text-base font-bold text-[hsl(var(--accent-foreground))] shadow-xl transition-all hover:scale-105 hover:shadow-2xl"
           >
             <WhatsAppIcon className="h-5 w-5" />
-            WhatsApp ile Bilgi Al
+            Get Info via WhatsApp
           </a>
           <a
             href="tel:02129126867"
@@ -36,11 +36,11 @@ export function CTABanner() {
             0212 912 68 67
           </a>
           <a
-            href="#iletisim"
+            href="#contact"
             className="flex items-center gap-2 rounded-xl border-2 border-primary-foreground/30 bg-primary-foreground/10 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-sm transition-all hover:border-primary-foreground/50 hover:bg-primary-foreground/20"
           >
             <Send className="h-5 w-5" />
-            Form Doldur
+            Fill Form
           </a>
         </div>
       </div>

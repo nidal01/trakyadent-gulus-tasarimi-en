@@ -7,23 +7,23 @@ import { Users, Clock, ThumbsUp, Building2, Play } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    title: "Estetik Diş Hekimliğinde Uzman Kadro",
-    desc: "Alanında deneyimli hekimlerimiz, yüz hatlarınıza ve beklentilerinize uygun kişiye özel gülüş tasarımı planlar.",
+    title: "Expert Team in Aesthetic Dentistry",
+    desc: "Our experienced doctors plan personalized smile designs tailored to your facial features and expectations.",
   },
   {
     icon: Clock,
-    title: "36 Yıllık Deneyim",
-    desc: "36 yılı aşkın süre boyunca binlerce hastaya güvenle hizmet.",
+    title: "36 Years of Experience",
+    desc: "Serving thousands of patients with confidence for over 36 years.",
   },
   {
     icon: ThumbsUp,
-    title: "Yüksek Hasta Memnuniyeti",
-    desc: "Hasta odaklı yaklaşımımızla yüksek memnuniyet oranı.",
+    title: "High Patient Satisfaction",
+    desc: "High satisfaction rate with our patient-centered approach.",
   },
   {
     icon: Building2,
-    title: "4 Modern Klinik",
-    desc: "Gelişmiş dijital ölçüm ve tasarım sistemleri sayesinde tedavi sürecinizi öngörülebilir ve konforlu hale getiriyoruz.",
+    title: "4 Modern Clinics",
+    desc: "We make your treatment process predictable and comfortable with advanced digital measurement and design systems.",
   },
 ]
 
@@ -45,7 +45,7 @@ export function WhyTrakyadent() {
 
   return (
     <section
-      id="neden-trakyadent"
+      id="why-trakyadent"
       className="bg-background py-16 lg:py-24"
       ref={ref}
     >
@@ -60,7 +60,7 @@ export function WhyTrakyadent() {
               
                 <iframe
                   src="https://www.youtube.com/embed/gGiEMZudaD4?autoplay=1"
-                  title="Trakyadent Tanıtım"
+                  title="Trakyadent Introduction"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="h-full w-full"
@@ -76,33 +76,30 @@ export function WhyTrakyadent() {
             style={{ transitionDelay: "200ms" }}
           >
             <span className="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-              Neden Trakyadent?
+              Why Trakyadent?
             </span>
             <h2 className="mb-2 font-serif text-3xl font-extrabold text-foreground lg:text-4xl">
-              Gülüşünüz İçin Doğru Adres: Maslak Trakyadent
+              The Right Address for Your Smile: Maslak Trakyadent
             </h2>
             <p className="mb-6 text-lg font-medium text-primary">
-              Deneyim, Estetik ve Güven Bir Arada
+              Experience, Aesthetics and Trust Combined
             </p>
 
             <div className="mb-6">
               <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                Kişiye Özel Tasarlanmış Kusursuz Gülüşler
+                Personalized Perfect Smiles
               </h3>
               <p className="leading-relaxed text-muted-foreground">
-                Trakyadent Ağız ve Diş Sağlığı, 36 yılı aşkın deneyimiyle estetik diş hekimliğinde yüksek
-                standartlarda hizmet sunmaktadır. Uzman hekim kadromuz, yüz hatlarınıza ve
-                beklentilerinize uygun dijital planlama ile doğal ve özgüvenli bir gülüş tasarlar.
+                Trakyadent Oral and Dental Health provides high-standard services in aesthetic dentistry with over 36 years of experience. Our expert medical team designs natural and confident smiles with digital planning tailored to your facial features and expectations.
               </p>
             </div>
 
             <div>
               <h3 className="mb-3 font-serif text-xl font-bold text-foreground">
-                Bugüne Kadar Binlerce Gülüşü Yeniden Tasarladık
+                We Have Redesigned Thousands of Smiles
               </h3>
               <p className="leading-relaxed text-muted-foreground">
-                Modern teknolojimiz, çok şubeli yapımız ve hasta memnuniyeti odaklı yaklaşımımız ile
-                estetik dönüşüm sürecinizi güvenle yönetiyoruz.
+                With our modern technology, multi-branch structure and patient satisfaction-focused approach, we manage your aesthetic transformation process with confidence.
               </p>
             </div>
           </div>

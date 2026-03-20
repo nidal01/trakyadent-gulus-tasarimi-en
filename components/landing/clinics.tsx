@@ -7,32 +7,32 @@ import { WhatsAppIcon } from "./whatsapp-icon"
 
 const maslak = {
   name: "Maslak",
-  address: "Maslak Mah. Büyükdere Caddesi, Nurol Plaza, No: 255, İç Kapı Z01 Sarıyer/İstanbul",
+  address: "Maslak Mah. Buyukdere Caddesi, Nurol Plaza, No: 255, Inner Door Z01 Sariyer/Istanbul",
   phone: "0212 912 68 67",
-  whatsapp: "905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003",
+  whatsapp: "905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003",
   image: "/images/17 (2).webp",
   mapUrl: "https://maps.google.com/?q=Trakyadent+Maslak",
 }
 
 const galleryImages = [
-  { src: "/images/5 (1).webp", alt: "Trakyadent Maslak Kliniği - Tedavi Odası" },
-  { src: "/images/maslak224.webp", alt: "Trakyadent Maslak Kliniği - Klinik İç Mekan" },
-  { src: "/images/4 (1).webp", alt: "Trakyadent Maslak Kliniği - Bekleme Alanı" },
+  { src: "/images/5 (1).webp", alt: "Trakyadent Maslak Clinic - Treatment Room" },
+  { src: "/images/maslak224.webp", alt: "Trakyadent Maslak Clinic - Interior" },
+  { src: "/images/4 (1).webp", alt: "Trakyadent Maslak Clinic - Waiting Area" },
 ]
 
 export function Clinics() {
   return (
-    <section id="klinikler" className="bg-muted py-16 lg:py-24">
+    <section id="clinics" className="bg-muted py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4">
         <div className="mx-auto mb-10 max-w-2xl text-center lg:mb-16">
           <span className="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Kliniğimiz
+            Our Clinic
           </span>
           <h2 className="mb-4 font-serif text-3xl font-extrabold text-foreground lg:text-4xl">
-            {"Size En Yakın Trakyadent'teyiz!"}
+            {"We're at the Trakyadent Nearest to You!"}
           </h2>
           <p className="text-lg font-semibold text-primary">
-            {"4 Şube \u2022 Tek Kalite Standardı"}
+            {"4 Branches \u2022 One Quality Standard"}
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export function Clinics() {
             <div className="relative h-56 overflow-hidden sm:h-64 lg:h-80">
               <Image
                 src={maslak.image}
-                alt="Trakyadent Maslak Şubesi"
+                alt="Trakyadent Maslak Branch"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -50,7 +50,7 @@ export function Clinics() {
               <div className="absolute inset-0 bg-gradient-to-t from-[hsl(210,40%,12%)]/60 to-transparent lg:bg-gradient-to-r" />
               <div className="absolute bottom-4 left-4 lg:bottom-6 lg:left-6">
                 <span className="rounded-lg bg-primary px-4 py-2 text-sm font-bold text-primary-foreground shadow-md">
-                  Maslak / İstanbul
+                  Maslak / Istanbul
                 </span>
               </div>
             </div>

@@ -16,7 +16,7 @@ export function InlineCTA({
   title,
   subtitle,
   image = "/images/smile-design.webp",
-  imageAlt = "Gülüş tasarımı sonucu",
+  imageAlt = "Smile design result",
   reversed = false,
 }: InlineCTAProps) {
   return (
