@@ -21,7 +21,7 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
     setIsLoading(true)
 
     try {
-      const response = await fetch("/pedodonti/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -133,8 +133,8 @@ export function ContactForm() {
           <div className="relative overflow-hidden rounded-2xl">
             <div className="aspect-video w-full overflow-hidden rounded-2xl bg-foreground/10">
               <iframe
-                src="https://www.youtube.com/embed/R3iy2821E3A"
-                title="Pedodonti Hekimimiz Anlatıyor"
+                src="https://www.youtube.com/embed/4x9KV17wKlE"
+                title="Gülüşünüzü Özgürleştirin !"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="h-full w-full"
@@ -146,10 +146,10 @@ export function ContactForm() {
           {/* Form */}
           <div>
             <h2 className="mb-2 font-serif text-2xl font-extrabold text-primary-foreground sm:text-3xl lg:text-4xl">
-              Çocuğunuz İçin Sağlıklı Bir Gülüşe İlk Adım!
+              Gülüşünüzü Yeniden Tasarlayın.
             </h2>
             <p className="mb-6 text-base text-primary-foreground/80 sm:mb-8 sm:text-lg">
-              Pedodonti Uzmanlarımızdan Detaylı Bilgi Alın!
+              Uzman ekibimizden gülüş tasarımı hakkında detaylı bilgi alın.
             </p>
             <MiniForm variant="dark" />
           </div>

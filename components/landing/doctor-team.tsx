@@ -8,9 +8,53 @@ const doctors = [
   { name: "Dt. Subaykan PANDAR", title: "Kurucu Yönetim Kurulu Üyesi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/subaykan-pandar-1-570x696.jpg" },
   { name: "Dt. Emre PANDAR", title: "Yönetim Kurulu Başkanı", image: "https://www.trakyadent.com.tr/wp-content/uploads/2021/11/emre-pandar-2-570x696.jpg" },
   { name: "Dt. Demet PANDAR", title: "Yönetim Kurulu Üyesi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/10/dt-demet-pandar-0001-570x696.jpg" },
-  { name: "Uzm. Dt. Bahar AKSAN YENİLMEZ", title: "Pedodonti Hekimi", image: "/images/bahar-trakyadent (1).jpeg" },
-  { name: "Uzm. Dt. Gamze KILIÇ", title: "Pedodonti Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/gamze-hoca-yeni-570x696.jpg" },
+  { name: "Dr. Dt. Fuad NAJAFI", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/fuad-najafi-1-570x696.jpg" },
+  { name: "Dr. Dt. Ezgi AKÇE", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/11/dt-ezgi-akce-maslak-570x696.jpg" },
+  { name: "Dt. Pınar ERSAN", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/pinar-hoca-foto-570x696.jpg" },
+  { name: "Uzm. Dt. Mert GÖKSU", title: "Diş Hekimi", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/mert-goksu-570x696.jpg" },
 ]
+
+function DoctorCard({ doctor }: { doctor: { name: string; title: string; image: string } }) {
+  return (
+    <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
+      <div className="flex-shrink-0 overflow-hidden bg-muted">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={doctor.image}
+          alt={doctor.name}
+          className="aspect-[570/696] w-full object-contain transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-3 text-center sm:p-4">
+        <h3 className="mb-0.5 font-serif text-xs font-bold text-foreground sm:text-sm">
+          {doctor.name}
+        </h3>
+        <p className="mb-2.5 flex-1 text-[11px] font-medium text-primary sm:mb-3 sm:text-xs">
+          {doctor.title}
+        </p>
+        <div className="mt-auto flex flex-col gap-1.5">
+          <a
+            href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-1.5 rounded-lg bg-[hsl(var(--accent))] px-3 py-2 text-xs font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105"
+          >
+            <WhatsAppIcon className="h-3.5 w-3.5" />
+            Randevu Al
+          </a>
+          <a
+            href="tel:02129126867"
+            className="flex items-center justify-center gap-1.5 rounded-lg border border-primary bg-primary/5 px-3 py-2 text-xs font-bold text-primary transition-transform hover:scale-105 hover:bg-primary/10"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+            0212 912 68 67
+          </a>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export function DoctorTeam() {
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -47,17 +91,17 @@ export function DoctorTeam() {
         {/* Header */}
         <div className="mx-auto mb-10 max-w-2xl text-center lg:mb-14">
           <span className="mb-3 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Pedodonti Hekimlerimiz
+            Uzman Hekimlerimiz
           </span>
           <h2 className="mb-4 font-serif text-3xl font-extrabold text-foreground lg:text-4xl">
             Uzman Hekim Kadromuz
           </h2>
           <p className="text-base text-muted-foreground lg:text-lg">
-            Minik Gülüşler İçin Büyük Uzmanlık! Tüm hekimlerimiz ile tanışın.
+            Tüm hekimlerimiz ile tanışın.
           </p>
         </div>
 
-        {/* Carousel */}
+        {/* Carousel - mobile scroll, desktop grid */}
         <div className="relative">
           {canScrollLeft && (
             <button
@@ -78,50 +122,19 @@ export function DoctorTeam() {
             </button>
           )}
 
+          {/* Single scroll carousel for all breakpoints */}
           <div
             ref={scrollRef}
-            className="flex items-stretch justify-center gap-4 overflow-x-auto scroll-smooth pb-4 sm:gap-5 lg:gap-6"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            className="flex items-stretch gap-4 overflow-x-auto scroll-smooth pb-4 sm:gap-5 lg:gap-6"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none", scrollSnapType: "x mandatory" }}
           >
             {doctors.map((doctor, index) => (
-              <div key={index} className="w-44 flex-shrink-0 sm:w-48 lg:w-52">
-                <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-                  <div className="flex-shrink-0 overflow-hidden bg-muted">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={doctor.image}
-                      alt={doctor.name}
-                      className="aspect-[570/696] w-full object-contain transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col p-3 text-center sm:p-4">
-                    <h3 className="mb-0.5 font-serif text-xs font-bold text-foreground sm:text-sm">
-                      {doctor.name}
-                    </h3>
-                    <p className="mb-2.5 flex-1 text-[11px] font-medium text-primary sm:mb-3 sm:text-xs">
-                      {doctor.title}
-                    </p>
-                    <div className="mt-auto flex flex-col gap-1.5">
-                      <a
-                        href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A001"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-1.5 rounded-lg bg-[hsl(var(--accent))] px-3 py-2 text-xs font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105"
-                      >
-                        <WhatsAppIcon className="h-3.5 w-3.5" />
-                        Randevu Al
-                      </a>
-                      <a
-                        href="tel:02129126867"
-                        className="flex items-center justify-center gap-1.5 rounded-lg border border-primary bg-primary/5 px-3 py-2 text-xs font-bold text-primary transition-transform hover:scale-105 hover:bg-primary/10"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
-                        0212 912 68 67
-                      </a>
-                    </div>
-                  </div>
-                </div>
+              <div
+                key={index}
+                className="w-44 flex-shrink-0 sm:w-52 lg:w-56"
+                style={{ scrollSnapAlign: "start" }}
+              >
+                <DoctorCard doctor={doctor} />
               </div>
             ))}
           </div>
@@ -134,16 +147,16 @@ export function DoctorTeam() {
               Hekimlerimiz Anlatıyor!
             </h2>
             <p className="text-base text-muted-foreground lg:text-lg">
-              Uzman hekimlerimizin bilgilendirici videolarıyla tedavi süreçleri
+              Uzman hekimlerimizin bilgilendirici videolarıyla gülüş tasarımı ve estetik tedavi süreçleri
               hakkında detaylı bilgi alın.
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
             {[
-              { id: "Z7qlOedllMg", title: "Çocuklarda Dijital Anestezi Nedir?" },
-              { id: "u-KTlvfIJ-Y", title: "Çocuk Diş Tedavisinde Rubber-Dam Kullanımı" },
-              { id: "BF19lesZckw", title: "Çocuklarda ilk diş muayenesi nasıl yapılmalıdır?" },
+              { id: "BFhvhAvorqE", title: "İmplant nedir ?" },
+              { id: "BAtkRuCgA-U", title: "Dijital Diş Hekimliği" },
+              { id: "ppkjvwJR2VU", title: "Diş Temizliği ve Diş Beyazlatma" },
             ].map((video) => (
               <div
                 key={video.id}
