@@ -1,11 +1,148 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { Send, CheckCircle } from "lucide-react"
+import { Send, CheckCircle, ChevronDown } from "lucide-react"
+
+const countryCodes = [
+  { code: "+90", country: "TR", flag: "🇹🇷", name: "Turkey" },
+  { code: "+49", country: "DE", flag: "🇩🇪", name: "Germany" },
+  { code: "+44", country: "GB", flag: "🇬🇧", name: "United Kingdom" },
+  { code: "+1", country: "US", flag: "🇺🇸", name: "United States" },
+  { code: "+33", country: "FR", flag: "🇫🇷", name: "France" },
+  { code: "+31", country: "NL", flag: "🇳🇱", name: "Netherlands" },
+  { code: "+32", country: "BE", flag: "🇧🇪", name: "Belgium" },
+  { code: "+43", country: "AT", flag: "🇦🇹", name: "Austria" },
+  { code: "+41", country: "CH", flag: "🇨🇭", name: "Switzerland" },
+  { code: "+39", country: "IT", flag: "🇮🇹", name: "Italy" },
+  { code: "+34", country: "ES", flag: "🇪🇸", name: "Spain" },
+  { code: "+30", country: "GR", flag: "🇬🇷", name: "Greece" },
+  { code: "+7", country: "RU", flag: "🇷🇺", name: "Russia" },
+  { code: "+380", country: "UA", flag: "🇺🇦", name: "Ukraine" },
+  { code: "+48", country: "PL", flag: "🇵🇱", name: "Poland" },
+  { code: "+46", country: "SE", flag: "🇸🇪", name: "Sweden" },
+  { code: "+47", country: "NO", flag: "🇳🇴", name: "Norway" },
+  { code: "+45", country: "DK", flag: "🇩🇰", name: "Denmark" },
+  { code: "+358", country: "FI", flag: "🇫🇮", name: "Finland" },
+  { code: "+971", country: "AE", flag: "🇦🇪", name: "UAE" },
+  { code: "+966", country: "SA", flag: "🇸🇦", name: "Saudi Arabia" },
+  { code: "+974", country: "QA", flag: "🇶🇦", name: "Qatar" },
+  { code: "+973", country: "BH", flag: "🇧🇭", name: "Bahrain" },
+  { code: "+965", country: "KW", flag: "🇰🇼", name: "Kuwait" },
+  { code: "+972", country: "IL", flag: "🇮🇱", name: "Israel" },
+  { code: "+994", country: "AZ", flag: "🇦🇿", name: "Azerbaijan" },
+  { code: "+995", country: "GE", flag: "🇬🇪", name: "Georgia" },
+  { code: "+998", country: "UZ", flag: "🇺🇿", name: "Uzbekistan" },
+  { code: "+7", country: "KZ", flag: "🇰🇿", name: "Kazakhstan" },
+  { code: "+61", country: "AU", flag: "🇦🇺", name: "Australia" },
+  { code: "+81", country: "JP", flag: "🇯🇵", name: "Japan" },
+  { code: "+82", country: "KR", flag: "🇰🇷", name: "South Korea" },
+  { code: "+86", country: "CN", flag: "🇨🇳", name: "China" },
+  { code: "+91", country: "IN", flag: "🇮🇳", name: "India" },
+  { code: "+55", country: "BR", flag: "🇧🇷", name: "Brazil" },
+  { code: "+52", country: "MX", flag: "🇲🇽", name: "Mexico" },
+]
+
+interface CountryCodeSelectorProps {
+  selectedCode: typeof countryCodes[0]
+  onSelect: (code: typeof countryCodes[0]) => void
+  variant?: "light" | "dark"
+}
+
+function CountryCodeSelector({ selectedCode, onSelect, variant = "light" }: CountryCodeSelectorProps) {
+  const [isOpen, setIsOpen] = useState(false)
+  const [search, setSearch] = useState("")
+  const dropdownRef = useRef<HTMLDivElement>(null)
+  const isDark = variant === "dark"
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false)
+        setSearch("")
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
+
+  const filteredCountries = countryCodes.filter(
+    (c) =>
+      c.name.toLowerCase().includes(search.toLowerCase()) ||
+      c.code.includes(search) ||
+      c.country.toLowerCase().includes(search.toLowerCase())
+  )
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      <button
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className={`flex h-full items-center gap-1 rounded-l-xl border-2 border-r-0 px-2 py-3 text-sm transition-colors sm:gap-1.5 sm:px-3 sm:py-3.5 sm:text-base ${
+          isDark
+            ? "border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground hover:bg-primary-foreground/20"
+            : "border-border bg-card text-foreground hover:bg-muted"
+        }`}
+      >
+        <span className="text-base sm:text-lg">{selectedCode.flag}</span>
+        <span className="font-medium">{selectedCode.code}</span>
+        <ChevronDown className={`h-3.5 w-3.5 transition-transform sm:h-4 sm:w-4 ${isOpen ? "rotate-180" : ""}`} />
+      </button>
+
+      {isOpen && (
+        <div
+          className={`absolute left-0 top-full z-50 mt-1 max-h-64 w-56 overflow-hidden rounded-xl border-2 shadow-xl sm:w-64 ${
+            isDark
+              ? "border-primary-foreground/20 bg-[hsl(var(--primary))]"
+              : "border-border bg-card"
+          }`}
+        >
+          <div className="sticky top-0 p-2">
+            <input
+              type="text"
+              placeholder="Search country..."
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              className={`w-full rounded-lg border px-3 py-2 text-sm focus:outline-none ${
+                isDark
+                  ? "border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/50"
+                  : "border-border bg-background text-foreground placeholder:text-muted-foreground"
+              }`}
+            />
+          </div>
+          <div className="max-h-48 overflow-y-auto">
+            {filteredCountries.map((country) => (
+              <button
+                key={`${country.country}-${country.code}`}
+                type="button"
+                onClick={() => {
+                  onSelect(country)
+                  setIsOpen(false)
+                  setSearch("")
+                }}
+                className={`flex w-full items-center gap-3 px-3 py-2.5 text-left text-sm transition-colors ${
+                  isDark
+                    ? "text-primary-foreground hover:bg-primary-foreground/10"
+                    : "text-foreground hover:bg-muted"
+                } ${selectedCode.country === country.country ? (isDark ? "bg-primary-foreground/20" : "bg-muted") : ""}`}
+              >
+                <span className="text-lg">{country.flag}</span>
+                <span className="flex-1 truncate">{country.name}</span>
+                <span className={`text-xs ${isDark ? "text-primary-foreground/60" : "text-muted-foreground"}`}>
+                  {country.code}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
 
 function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
   const [formData, setFormData] = useState({ name: "", phone: "", message: "" })
+  const [selectedCountry, setSelectedCountry] = useState(countryCodes[0]) // Default to Turkey
   const [submitted, setSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
@@ -13,18 +150,26 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (!/^\d{11}$/.test(formData.phone)) {
-      alert("Phone number must be 11 digits and contain only numbers.")
+    // Allow phone numbers between 4-15 digits (international standard)
+    if (formData.phone.length < 4) {
+      alert("Please enter a valid phone number.")
       return
     }
 
     setIsLoading(true)
 
+    const fullPhoneNumber = `${selectedCountry.code}${formData.phone}`
+
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          phone: fullPhoneNumber,
+          countryCode: selectedCountry.code,
+          country: selectedCountry.name,
+        }),
       })
 
       if (response.ok) {
@@ -82,24 +227,31 @@ function MiniForm({ variant = "light" }: { variant?: "light" | "dark" }) {
           : "border-border bg-card text-foreground placeholder:text-muted-foreground focus:border-primary"
           }`}
       />
-      <input
-        type="tel"
-        placeholder="0532 xxx xx xx"
-        required
-        value={formData.phone}
-        onChange={(e) => {
-          const digitsOnly = e.target.value.replace(/\D/g, "").slice(0, 11)
-          setFormData({ ...formData, phone: digitsOnly })
-        }}
-        inputMode="numeric"
-        pattern="[0-9]{11}"
-        minLength={11}
-        maxLength={11}
-        className={`rounded-xl border-2 px-4 py-3 text-sm focus:outline-none sm:px-5 sm:py-3.5 sm:text-base ${isDark
-          ? "border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-[hsl(var(--accent))]"
-          : "border-border bg-card text-foreground placeholder:text-muted-foreground/70 focus:border-primary"
-          }`}
-      />
+      
+      {/* Phone input with country code selector */}
+      <div className="flex">
+        <CountryCodeSelector
+          selectedCode={selectedCountry}
+          onSelect={setSelectedCountry}
+          variant={variant}
+        />
+        <input
+          type="tel"
+          placeholder="5XX XXX XX XX"
+          required
+          value={formData.phone}
+          onChange={(e) => {
+            const digitsOnly = e.target.value.replace(/\D/g, "").slice(0, 15)
+            setFormData({ ...formData, phone: digitsOnly })
+          }}
+          inputMode="numeric"
+          className={`min-w-0 flex-1 rounded-r-xl border-2 border-l-0 px-4 py-3 text-sm focus:outline-none sm:px-5 sm:py-3.5 sm:text-base ${isDark
+            ? "border-primary-foreground/20 bg-primary-foreground/10 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-[hsl(var(--accent))]"
+            : "border-border bg-card text-foreground placeholder:text-muted-foreground/70 focus:border-primary"
+            }`}
+        />
+      </div>
+      
       <textarea
         placeholder="Your Message (Optional)"
         rows={2}
