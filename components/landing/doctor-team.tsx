@@ -10,8 +10,7 @@ const doctors = [
   { name: "Dt. Demet PANDAR", title: "Board Member", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/10/dt-demet-pandar-0001-570x696.jpg" },
   { name: "Dr. Dt. Fuad NAJAFI", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/08/fuad-najafi-1-570x696.jpg" },
   { name: "Dr. Dt. Ezgi AKCE", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/11/dt-ezgi-akce-maslak-570x696.jpg" },
-  { name: "Dt. Pinar ERSAN", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/pinar-hoca-foto-570x696.jpg" },
-  { name: "Uzm. Dt. Mert GOKSU", title: "Dentist", image: "https://www.trakyadent.com.tr/wp-content/uploads/2025/12/mert-goksu-570x696.jpg" },
+
 ]
 
 function DoctorCard({ doctor }: { doctor: { name: string; title: string; image: string } }) {
