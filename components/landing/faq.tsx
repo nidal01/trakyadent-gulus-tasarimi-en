@@ -123,7 +123,7 @@ export function FAQ() {
                   Contact our smile design team right away.
                 </p>
                 <a
-                  href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+                  href="https://wa.me/905432555998?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-6 py-3 text-sm font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-transform hover:scale-105"
@@ -145,7 +145,7 @@ export function FAQ() {
             Contact our smile design team right away.
           </p>
           <a
-            href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+            href="https://wa.me/905432555998?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-8 py-4 text-base font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-transform hover:scale-105"
