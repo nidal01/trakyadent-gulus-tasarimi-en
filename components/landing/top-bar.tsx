@@ -113,7 +113,7 @@ export function StickyHeader() {
             </ul>
 
             <a
-              href="https://wa.me/905432555998?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+              href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden items-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-5 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105 lg:flex"
@@ -153,7 +153,7 @@ export function StickyHeader() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/905432555998?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+                href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-4 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))]"
