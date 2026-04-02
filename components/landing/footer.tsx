@@ -73,14 +73,14 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <Phone className="h-4 w-4 text-primary" />
-                <a href="tel:02129126867" className="transition-colors hover:text-[hsl(var(--topbar-foreground))]">
-                  0212 912 68 67
+                <a href="tel:905467639877" className="transition-colors hover:text-[hsl(var(--topbar-foreground))]">
+                  0546 763 98 77
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <WhatsAppIcon className="h-4 w-4 text-[hsl(var(--accent))]" />
                 <a
-                  href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20book%20an%20appointment%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+                  href="https://wa.me/905467639877?text=Hello%2C%0AI%20would%20like%20to%20book%20an%20appointment%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-[hsl(var(--topbar-foreground))]"
@@ -113,7 +113,7 @@ export function Footer() {
               </li>
             </ul>
             <a
-              href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20book%20an%20appointment%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+              href="https://wa.me/905467639877?text=Hello%2C%0AI%20would%20like%20to%20book%20an%20appointment%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-4 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105"
