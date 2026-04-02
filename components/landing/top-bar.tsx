@@ -67,11 +67,11 @@ export function StickyHeader() {
             </span>
             <div className="flex items-center gap-2 sm:gap-4">
               <a
-                href="tel:02129126867"
+                href="tel:905467639877"
                 className="flex items-center gap-1 whitespace-nowrap text-xs transition-colors hover:text-[hsl(var(--chart-4))] sm:gap-1.5 sm:text-sm"
               >
                 <Phone className="h-3 w-3 flex-shrink-0 sm:h-3.5 sm:w-3.5" />
-                <span className="font-semibold">0212 912 68 67</span>
+                <span className="font-semibold">0546 763 98 77</span>
               </a>
               <span className="flex items-center gap-1 whitespace-nowrap text-xs sm:gap-1.5 sm:text-sm">
                 <MapPin className="h-3 w-3 flex-shrink-0 sm:h-3.5 sm:w-3.5" />
@@ -113,7 +113,7 @@ export function StickyHeader() {
             </ul>
 
             <a
-              href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+              href="https://wa.me/905467639877?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden items-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-5 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105 lg:flex"
@@ -153,7 +153,7 @@ export function StickyHeader() {
                 ))}
               </ul>
               <a
-                href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+                href="https://wa.me/905467639877?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-4 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))]"

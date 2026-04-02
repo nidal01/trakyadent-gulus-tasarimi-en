@@ -24,7 +24,7 @@ export function StickyButtons() {
           }`}
       >
         <a
-          href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+          href="https://wa.me/905467639877?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative flex h-14 w-14 items-center justify-center rounded-full bg-[hsl(142,70%,45%)] text-[hsl(0,0%,100%)] shadow-xl transition-transform hover:scale-110"
@@ -34,7 +34,7 @@ export function StickyButtons() {
           <WhatsAppIcon className="relative h-7 w-7" />
         </a>
         <a
-          href="tel:02129126867"
+          href="tel:905467639877"
           className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110"
           aria-label="Call now"
         >
@@ -69,7 +69,7 @@ export function StickyButtons() {
           style={{ backgroundColor: "#384978" }}
         >
           <a
-            href="https://wa.me/905417265212?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
+            href="https://wa.me/905467639877?text=Hello%2C%0AI%20would%20like%20to%20get%20information%20about%20smile%20design%20at%20your%20Maslak%20clinic.%0ACan%20I%20get%20information%20about%20available%20times%3F%20REF%3A003"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-primary-foreground transition-opacity active:opacity-80"
@@ -82,11 +82,11 @@ export function StickyButtons() {
           <div className="w-20" />
 
           <a
-            href="tel:02129126867"
+            href="tel:905467639877"
             className="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-primary-foreground transition-opacity active:opacity-80"
           >
             <Phone className="h-5 w-5" />
-            <span className="text-[11px] font-bold leading-none">0212 912 68 67</span>
+            <span className="text-[11px] font-bold leading-none">0546 763 98 77</span>
           </a>
         </div>
       </div>
