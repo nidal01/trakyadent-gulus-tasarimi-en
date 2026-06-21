@@ -13,9 +13,12 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    if (!/^\d{11}$/.test(phone)) {
+    // Telefon uluslararası formatta gelebilir (ör. +905XXXXXXXXX).
+    // Sadece rakamları sayarak 7-15 hane arası geçerli kabul ediyoruz.
+    const phoneDigits = String(phone).replace(/\D/g, "")
+    if (phoneDigits.length < 7 || phoneDigits.length > 15) {
       return NextResponse.json(
-        { error: "Telefon numarası 11 haneli ve yalnızca rakamlardan oluşmalıdır" },
+        { error: "Geçerli bir telefon numarası giriniz" },
         { status: 400 }
       )
     }
