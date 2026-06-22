@@ -162,7 +162,7 @@ function TreatmentContent({ treatment }: { treatment: typeof treatments[0] }) {
           Get Info About This Treatment
         </a>
         <a
-          href="tel:905467639877"
+          href="tel:05467639877"
           className="flex items-center justify-center gap-2 rounded-xl border-2 border-primary px-4 py-2.5 text-xs font-bold text-primary transition-colors hover:bg-primary hover:text-primary-foreground sm:px-6 sm:py-3.5 sm:text-sm"
         >
           0546 763 98 77 Call Now

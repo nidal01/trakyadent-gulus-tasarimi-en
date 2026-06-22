@@ -29,7 +29,7 @@ export function CTABanner() {
             Get Info via WhatsApp
           </a>
           <a
-            href="tel:905467639877"
+            href="tel:05467639877"
             className="flex items-center gap-2 rounded-xl border-2 border-primary-foreground/30 bg-primary-foreground/10 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-sm transition-all hover:border-primary-foreground/50 hover:bg-primary-foreground/20"
           >
             <Phone className="h-5 w-5" />

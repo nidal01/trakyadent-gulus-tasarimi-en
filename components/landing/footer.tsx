@@ -73,7 +73,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <Phone className="h-4 w-4 text-primary" />
-                <a href="tel:905467639877" className="transition-colors hover:text-[hsl(var(--topbar-foreground))]">
+                <a href="tel:05467639877" className="transition-colors hover:text-[hsl(var(--topbar-foreground))]">
                   0546 763 98 77
                 </a>
               </li>
@@ -85,7 +85,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-[hsl(var(--topbar-foreground))]"
                 >
-                  0541 726 52 12
+                  0546 763 98 77
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">

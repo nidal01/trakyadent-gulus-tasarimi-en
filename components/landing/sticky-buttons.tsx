@@ -34,7 +34,7 @@ export function StickyButtons() {
           <WhatsAppIcon className="relative h-7 w-7" />
         </a>
         <a
-          href="tel:905467639877"
+          href="tel:05467639877"
           className="flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110"
           aria-label="Call now"
         >
@@ -82,7 +82,7 @@ export function StickyButtons() {
           <div className="w-20" />
 
           <a
-            href="tel:905467639877"
+            href="tel:05467639877"
             className="flex flex-1 flex-col items-center justify-center gap-1 py-3 text-primary-foreground transition-opacity active:opacity-80"
           >
             <Phone className="h-5 w-5" />

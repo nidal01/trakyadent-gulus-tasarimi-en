@@ -173,7 +173,7 @@ export function HeroSlider() {
                       Book via WhatsApp
                     </a>
                     <a
-                      href="tel:905467639877"
+                      href="tel:05467639877"
                       className="flex items-center justify-center gap-2 rounded-xl border-2 border-[hsl(0,0%,100%)]/30 bg-[hsl(0,0%,100%)]/10 px-6 py-3.5 text-base font-bold text-[hsl(0,0%,100%)] backdrop-blur-sm transition-all hover:border-[hsl(0,0%,100%)]/50 hover:bg-[hsl(0,0%,100%)]/20"
                     >
                       0546 763 98 77 Call Now
@@ -231,7 +231,7 @@ export function HeroSlider() {
           Book via WhatsApp
         </a>
         <a
-          href="tel:905467639877"
+          href="tel:05467639877"
           className="flex items-center justify-center gap-2 rounded-xl border-2 border-[hsl(0,0%,100%)]/30 bg-[hsl(0,0%,100%)]/10 px-5 py-3.5 text-sm font-bold text-[hsl(0,0%,100%)] transition-all hover:bg-[hsl(0,0%,100%)]/20"
         >
           0546 763 98 77 Call Now

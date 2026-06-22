@@ -67,7 +67,7 @@ export function StickyHeader() {
             </span>
             <div className="flex items-center gap-2 sm:gap-4">
               <a
-                href="tel:905467639877"
+                href="tel:05467639877"
                 className="flex items-center gap-1 whitespace-nowrap text-xs transition-colors hover:text-[hsl(var(--chart-4))] sm:gap-1.5 sm:text-sm"
               >
                 <Phone className="h-3 w-3 flex-shrink-0 sm:h-3.5 sm:w-3.5" />
