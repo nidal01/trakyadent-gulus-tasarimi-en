@@ -73,19 +73,19 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <Phone className="h-4 w-4 text-primary" />
-                <a href="tel:02129126867" className="transition-colors hover:text-[hsl(var(--topbar-foreground))]">
-                  0212 912 68 67
+                <a href="tel:05467639877" className="transition-colors hover:text-[hsl(var(--topbar-foreground))]">
+                  0546 763 98 77
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
                 <WhatsAppIcon className="h-4 w-4 text-[hsl(var(--accent))]" />
                 <a
-                  href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+                  href="https://wa.me/905467639877?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="transition-colors hover:text-[hsl(var(--topbar-foreground))]"
                 >
-                  0541 726 52 12
+                  0546 763 98 77
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-[hsl(var(--topbar-foreground))]/70">
@@ -113,7 +113,7 @@ export function Footer() {
               </li>
             </ul>
             <a
-              href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+              href="https://wa.me/905467639877?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20%C3%A7ocu%C4%9Fum%20i%C3%A7in%20randevu%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[hsl(var(--accent))] px-4 py-2.5 text-sm font-bold text-[hsl(var(--accent-foreground))] transition-transform hover:scale-105"

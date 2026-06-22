@@ -164,7 +164,7 @@ export function HeroSlider() {
                     style={{ transitionDelay: "800ms" }}
                   >
                     <a
-                      href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+                      href="https://wa.me/905467639877?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-6 py-3.5 text-base font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-105 hover:shadow-xl"
@@ -173,10 +173,10 @@ export function HeroSlider() {
                       WhatsApp ile Randevu
                     </a>
                     <a
-                      href="tel:02129126867"
+                      href="tel:05467639877"
                       className="flex items-center justify-center gap-2 rounded-xl border-2 border-[hsl(0,0%,100%)]/30 bg-[hsl(0,0%,100%)]/10 px-6 py-3.5 text-base font-bold text-[hsl(0,0%,100%)] backdrop-blur-sm transition-all hover:border-[hsl(0,0%,100%)]/50 hover:bg-[hsl(0,0%,100%)]/20"
                     >
-                      0212 912 68 67 Hemen Arayın
+                      0546 763 98 77 Hemen Arayın
                     </a>
                   </div>
                 </div>
@@ -222,7 +222,7 @@ export function HeroSlider() {
       {/* Mobile CTA buttons - below the image */}
       <div className="flex flex-col gap-2.5 bg-[hsl(210,40%,12%)] px-4 py-4 sm:hidden">
         <a
-          href="https://wa.me/905417265212?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
+          href="https://wa.me/905467639877?text=Merhaba%2C%0AMaslak%20klini%C4%9Finizde%20g%C3%BCl%C3%BC%C5%9F%20tasar%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.%0AUygun%20saatler%20hakk%C4%B1nda%20bilgi%20alabilir%20miyim%3F%20REF%3A003"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(var(--accent))] px-5 py-3.5 text-sm font-bold text-[hsl(var(--accent-foreground))] shadow-lg transition-all hover:scale-105"
@@ -231,10 +231,10 @@ export function HeroSlider() {
           WhatsApp ile Randevu
         </a>
         <a
-          href="tel:02129126867"
+          href="tel:05467639877"
           className="flex items-center justify-center gap-2 rounded-xl border-2 border-[hsl(0,0%,100%)]/30 bg-[hsl(0,0%,100%)]/10 px-5 py-3.5 text-sm font-bold text-[hsl(0,0%,100%)] transition-all hover:bg-[hsl(0,0%,100%)]/20"
         >
-          0212 912 68 67 Hemen Arayın
+          0546 763 98 77 Hemen Arayın
         </a>
       </div>
     </section>
