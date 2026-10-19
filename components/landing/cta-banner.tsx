@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import { Phone, Send } from "lucide-react"
+import { Phone } from "lucide-react"
 import { WhatsAppIcon } from "./whatsapp-icon"
 
 export function CTABanner() {
@@ -34,13 +34,6 @@ export function CTABanner() {
           >
             <Phone className="h-5 w-5" />
             0546 763 98 77
-          </a>
-          <a
-            href="#contact"
-            className="flex items-center gap-2 rounded-xl border-2 border-primary-foreground/30 bg-primary-foreground/10 px-8 py-4 text-base font-bold text-primary-foreground backdrop-blur-sm transition-all hover:border-primary-foreground/50 hover:bg-primary-foreground/20"
-          >
-            <Send className="h-5 w-5" />
-            Fill Form
           </a>
         </div>
       </div>
