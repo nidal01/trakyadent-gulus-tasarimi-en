@@ -60,7 +60,7 @@ export function WhyTrakyadent() {
               {!isPlaying ? (
                 <>
                   <Image
-                    src="/images/maslak-sube.jpeg"
+                    src="/images/clinic-featured.webp"
                     alt="Trakyadent Maslak Clinic"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
